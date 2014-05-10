@@ -7617,7 +7617,7 @@ DDEController.pdf</description>
 <library name="tellis2">
 <packages>
 <package name="WIRE_HOLE">
-<pad name="P$1" x="0" y="0" drill="1.4" diameter="2.2"/>
+<pad name="P$1" x="0" y="0" drill="1.4" diameter="2.6"/>
 <text x="-3" y="2.1" size="1.27" layer="25" align="center-left">&gt;NAME</text>
 <text x="-3.1" y="-2.2" size="1.27" layer="27" align="center-left">&gt;VALUE</text>
 </package>
