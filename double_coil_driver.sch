@@ -11461,9 +11461,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="COIL1-" library="tellis2" deviceset="M01_WIRE" device=""/>
 <part name="COIL2+" library="tellis2" deviceset="M01_WIRE" device=""/>
 <part name="COIL2-" library="tellis2" deviceset="M01_WIRE" device=""/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C1210K"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C1210K"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C1210K"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C1210K" value="10uF"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C1210K" value="10uF"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C1210K" value="10uF"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C1206K" value="1uF"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C1206K" value="1uF"/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
@@ -11485,8 +11485,8 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="GND6" library="supply1" deviceset="GNDA" device=""/>
 <part name="U1" library="opamp-MCP6L01U" deviceset="MCP6L01UT-E/OT" device=""/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0603K" value="100nF"/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C1210K"/>
-<part name="C14" library="rcl" deviceset="C-EU" device="C1210K"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C1210K" value="10uF"/>
+<part name="C14" library="rcl" deviceset="C-EU" device="C1210K" value="10uF"/>
 <part name="X2" library="con-amp-micromatch" deviceset="MICROMATCH-10" device=""/>
 <part name="D6" library="diode" deviceset="DIODE-" device="DO214AA" value="MURS140"/>
 <part name="D8" library="diode" deviceset="DIODE-" device="DO214AA" value="MURS140"/>
