@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11554,8 +11554,8 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <instance part="D7" gate="G$1" x="241.3" y="71.12" rot="R270"/>
 <instance part="P+11" gate="1" x="241.3" y="78.74"/>
 <instance part="C13" gate="G$1" x="251.46" y="66.04" rot="R90"/>
-<instance part="R15" gate="G$1" x="53.34" y="55.88" rot="R90"/>
-<instance part="R16" gate="G$1" x="60.96" y="55.88" rot="R90"/>
+<instance part="R15" gate="G$1" x="60.96" y="33.02" rot="R90"/>
+<instance part="R16" gate="G$1" x="68.58" y="33.02" rot="R90"/>
 <instance part="R17" gate="G$1" x="53.34" y="33.02" rot="R90"/>
 <instance part="CAP+" gate="G$1" x="228.6" y="149.86"/>
 <instance part="CAP-" gate="G$1" x="228.6" y="137.16"/>
@@ -11732,6 +11732,14 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <wire x1="33.02" y1="30.48" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
 <junction x="48.26" y="30.48"/>
 <junction x="48.26" y="35.56"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="27.94" x2="60.96" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="25.4" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="27.94" x2="68.58" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="25.4" x2="60.96" y2="25.4" width="0.1524" layer="91"/>
+<junction x="53.34" y="25.4"/>
+<junction x="60.96" y="25.4"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GNDA"/>
@@ -11766,16 +11774,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
 <wire x1="76.2" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="63.5" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="66.04" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="63.5" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
-<junction x="53.34" y="63.5"/>
-<pinref part="P+6" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="U$8" gate="A" pin="VDD"/>
@@ -11909,10 +11907,10 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </segment>
 <segment>
 <label x="35.56" y="45.72" size="1.778" layer="95"/>
-<wire x1="33.02" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="45.72" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="45.72" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="X2" gate="-3" pin="S"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="45.72" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="KICK2" class="0">
@@ -11924,9 +11922,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <segment>
 <label x="35.56" y="43.18" size="1.778" layer="95"/>
 <wire x1="33.02" y1="43.18" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="43.18" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="X2" gate="-4" pin="S"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="43.18" x2="60.96" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CHARGE" class="0">
